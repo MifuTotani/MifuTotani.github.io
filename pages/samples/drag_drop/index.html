@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>balltest</title>
+</head>
+<body>
+  <div id="app">
+    <img src="ball.png" id="ball" width="80px">
+  </div>
+  <script>
+    var ball = document.getElementById("ball");
+    ball.onmousedown = function(event){
+      console.log("タップされたよ!");
+    }
+  </script>
+</body>
+</html>
