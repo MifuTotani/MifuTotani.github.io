@@ -16,7 +16,8 @@ function swipe_cal(startX, startY, endX, endY){
 		if(Math.abs(startY - endY) < MIN_DIST){
 			tap_cnt++;//連続タップ回数
 			if (tap_cnt >= CHMOD_THRESH) mode_val = 1;
-			console.log("mode_val: "+mode_val + " tap_cnt: " + " startX: " + startX.toFixed(2) + "      startY: " + startY.toFixed(2) + "</br> endX: " + endX.toFixed(2) + "         endY: " + endY.toFixed(2));
+			if (tap_cnt >= CHMOD_THRESH && state == STATE.TAP3) state = STATE.FINISH;
+			console.log("mode_val: "+mode_val + " tap_cnt: "+tap_cnt+ " startX: " + startX.toFixed(2) + "      startY: " + startY.toFixed(2) + "</br> endX: " + endX.toFixed(2) + "         endY: " + endY.toFixed(2));
 			return;//タップの場合は終了
 		}
 	}
@@ -34,9 +35,9 @@ function swipe_cal(startX, startY, endX, endY){
 		else if (endY - startY < 0) {swipe_dir = SWIPE_DIR.UP}//下から上にスワイプ
 	}
 
-	card_cal(mode_val, swipe_dir);
+	if(state == STATE.CHOICE) card_cal(mode_val, swipe_dir);
 	if(mode_val > 0) mode_val = (mode_val+1) % 5;
-	console.log("mode_val: "+mode_val + " tap_cnt: " + " startX: " + startX.toFixed(2) + "      startY: " + startY.toFixed(2) + "</br> endX: " + endX.toFixed(2) + "         endY: " + endY.toFixed(2));
+	console.log("mode_val: "+mode_val + " tap_cnt: " +tap_cnt+ " startX: " + startX.toFixed(2) + "      startY: " + startY.toFixed(2) + "</br> endX: " + endX.toFixed(2) + "         endY: " + endY.toFixed(2));
 	
 
 }

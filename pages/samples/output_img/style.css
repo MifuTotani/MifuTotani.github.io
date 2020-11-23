@@ -1,4 +1,4 @@
-/* [class^="img-flex-"] {
+[class^="img-flex-"] {
 	margin-bottom: 20px;
 	display: -webkit-flex;
 	display: flex;
@@ -6,10 +6,7 @@
 	justify-content: space-between;
 }
 
-.img-flex-2 img { width: 20px; }
-.img-flex-3 img { width: 32%; }
-.img-flex-4 img { width: 24%; } */
-
-img {
-	width: 25%;  /* 横幅に合わせて自動で拡大縮小する */
- }
+.img-flex-2 img { width: cac(100%/2); }
+.img-flex-3 img { width: calc(100%/3); }
+.img-flex-4 img { width: calc(100%/4); }
+.img-flex-13 img { width: calc(100%/13); }

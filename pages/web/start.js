@@ -1,1 +1,0 @@
-<img src="/img/torannpu-illust2.png" id="♤2"width="80px"></img>

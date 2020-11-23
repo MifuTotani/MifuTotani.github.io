@@ -7,7 +7,6 @@ var cards = [
 	];// [i][0]:SUIT,  [i][1], [i][2]: 00~11までで 0 ~ 15を表す
 
 function qurd2card(quadrant){// 4進数表記からカードに変換
-	var SUIT = { 0: '♤' , 1:'♡' , 2: '♢', 3: '♧'};//♤  ♡  ♢   ♧
 	var text = "";
 	var num = quadrant[1] * 4 + quadrant[2] * 1;
 	text += SUIT[quadrant[0]] + num;
