@@ -38,16 +38,17 @@ function setSwipe(elem) {
 
 //数値を画面に表示する
 function setPrint() {
-	numberX.innerHTML = printX;
-	numberY.innerHTML = printY;
-	numberZ.innerHTML = printZ;
+	// numberX.innerHTML = printX;
+	// numberY.innerHTML = printY;
+	// numberZ.innerHTML = printZ;
 }
 
 //起動時の処理
 window.addEventListener("load", function () {
-	numberX = document.getElementById("numberX");
-	numberY = document.getElementById("numberY");// 数値表示部分のDOM取得
-	numberZ = document.getElementById("numberZ");
+	// numberX = document.getElementById("numberX");
+	// numberY = document.getElementById("numberY");// 数値表示部分のDOM取得
+	// numberZ = document.getElementById("numberZ");
 	setPrint();
-	setSwipe("#contents");// スワイプイベント設定
+	// setSwipe("#contents");// スワイプイベント設定
+	setSwipe("#app");// スワイプイベント設定
 });
