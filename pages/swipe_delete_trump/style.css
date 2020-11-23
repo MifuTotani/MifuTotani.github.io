@@ -34,7 +34,7 @@ body{
 .img-flex-2 img { width: calc(100%/2); }
 .img-flex-3 img { width: calc(100%/3); }
 .img-flex-4 img { width: calc(100%/4); }
-.img-flex-13 img { width: calc(100%/13); }
+.img-flex-13 img { width: calc(100%/13); height: auto;  }
 
 
 
