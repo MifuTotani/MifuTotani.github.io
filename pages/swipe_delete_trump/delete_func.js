@@ -23,9 +23,9 @@ function delete_func(nowX, nowY){
                 if(num == 0 || 14<=num) continue;
                 var text = "";
                 text += SUIT[i] + num;
-                if(qurd2card(cards[0]) == text) {cnt++; continue;}//消さないカード//選ばれたカードはSTATE.FINISHでも消さない
-                if(qurd2card(cards[1]) == text && state == STATE.DELETE) {cnt++; continue;}//消さないカード
-                if(qurd2card(cards[2]) == text && state == STATE.DELETE) {cnt++; continue;}//消さないカード
+                if(qurd2card(cards[0]) == text) {continue;}//消さないカード//選ばれたカードはSTATE.FINISHでも消さない
+                if(qurd2card(cards[1]) == text && state == STATE.DELETE) {continue;}//消さないカード
+                if(qurd2card(cards[2]) == text && state == STATE.DELETE) {continue;}//消さないカード
                 
                 // card[i][j][k] = document.getElementById(text);
                 card = document.getElementById(text);
@@ -34,14 +34,18 @@ function delete_func(nowX, nowY){
                 var clientRect = card.getBoundingClientRect();
                 var x0 = clientRect.left, y0 = clientRect.top, x1 = clientRect.right, y1 = clientRect.bottom;
                 if(x0 <= nowX && nowX <= x1){
-                    if(y0 <= nowY && nowY <= y1){ card.src = "img/white.png"; cnt++;}
+                    if(y0 <= nowY && nowY <= y1){ 
+                        card.src = "img/white.png";
+                        card.srcset = "img/white.png";//retinaディスプレイ(高画質)のせいでこれを入れている
+                        cnt++;}
                 }
 
             }
         }
     }
+    // console.log(" cnt: " + cnt );
 
-    if(cnt == 52 && STATE.DELETE) state = STATE.TAP3;
-    if(cnt == 52 && STATE.FINISH){printZ = "じゃあああああああん </br>" + qurd2card(cards[0]);}
+    if(cnt == 49 && state == STATE.DELETE) state = STATE.TAP3;
+    if(cnt == 51 && state == STATE.FINISH){printZ = "じゃあああああああん </br>" + qurd2card(cards[0]);}
 
 }
