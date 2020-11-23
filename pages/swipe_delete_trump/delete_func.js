@@ -42,24 +42,6 @@ function delete_func(nowX, nowY){
     }
 
     if(cnt == 52 && STATE.DELETE) state = STATE.TAP3;
-    if(cnt == 52 && STATE.FINISH){printZ = "じゃあああああああん";}
+    if(cnt == 52 && STATE.FINISH){printZ = "じゃあああああああん </br>" + qurd2card(cards[0]);}
 
-
-    // // console.log(" delete_func()" + document.getElementById("♤5"));
-    // var card = document.getElementById("♤5");
-    // // card.style.position = "absolute";//なんか画像が原点に移動したんで止めた
-    // var clientRect = card.getBoundingClientRect();
-    // var x0 = clientRect.left;
-    // var y0 = clientRect.top;
-    // var x1 = clientRect.right;
-    // var y1 = clientRect.bottom;
-    // console.log("(nowX, nowY)=(" + nowX + ", "+ nowY + ")    (x0, y0)=(" + x0 + ", "+ y0+")   (x1, y1)=(" + x1 + ", "+ y1+")");
-    // if(x0 <= nowX && nowX <= x1){
-    //     if(y0 <= nowY && nowY <= y1){
-    //         // var swipe_area = document.getElementById("swipe_area");
-    //         // swipe_area.removeChild(card);
-    //         // card.remove();
-    //         card.src = "img/white.png";
-    //     }
-    // }
 }
