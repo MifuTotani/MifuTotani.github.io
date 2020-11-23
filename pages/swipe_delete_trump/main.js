@@ -1,6 +1,6 @@
 
 var numberX, numberY, numberZ;		// 数値表示部分のDOM取得用			
-var printX = "", printY = "", printZ = "こんにちは";
+var printX = "", printY = "", printZ = "おはよう";
 
 // var SWIPE_DIR = {RIGHT: 0, DOWN: 1, LEFT: 2, UP: 3};//→ ↓ ← ↑
 const SUIT = { 0: '♤' , 1:'♡' , 2: '♢', 3: '♧'};//♤  ♡  ♢   ♧	
