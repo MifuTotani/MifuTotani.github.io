@@ -38,10 +38,10 @@ body{
 }
 
 /*Retinaディスプレイ対策で100%じゃなくて50%にする(これでいいかはわからん*/
-.img-flex-2 img { width: calc(50%/2); }
-.img-flex-3 img { width: calc(50%/3); }
-.img-flex-4 img { width: calc(50%/4); }
-.img-flex-13 img { width: calc(50%/13); height: auto;  }
+.img-flex-2 img { width: calc(100%/2); }
+.img-flex-3 img { width: calc(100%/3); }
+.img-flex-4 img { width: calc(100%/4); }
+.img-flex-13 img { width: calc(100%/13); height: auto;  }
 
 
 /* @media screen and (min-width: 768px) and (max-width: 1024px) {
