@@ -41,7 +41,8 @@ body{
 .img-flex-2 img { width: calc(100%/2); }
 .img-flex-3 img { width: calc(100%/3); }
 .img-flex-4 img { width: calc(100%/4); }
-.img-flex-13 img { width: calc(100%/13); height: auto;  }
+/* .img-flex-13 img { width: calc(100%/13); height: auto;  } */
+.img-flex-13 img { width: 30.77; height: 43.55;  }/* calcl(100%/13)にした時の値　srcsetではRetina Displayでうまくいかないので仕方なく */
 
 
 /* @media screen and (min-width: 768px) and (max-width: 1024px) {

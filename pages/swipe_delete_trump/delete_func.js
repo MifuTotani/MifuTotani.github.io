@@ -33,11 +33,13 @@ function delete_func(nowX, nowY){
                 if(card.getAttribute("src") == "img/white.png"){ cnt++; continue;}//すでに消されている
                 var clientRect = card.getBoundingClientRect();
                 var x0 = clientRect.left, y0 = clientRect.top, x1 = clientRect.right, y1 = clientRect.bottom;
+                console.log( " width: " + clientRect.width  + " height: " + clientRect.height+" x0: " + x0 + " y0: " + y0 + " x1: " + x1 + " y1: " + y1 );
                 if(x0 <= nowX && nowX <= x1){
                     if(y0 <= nowY && nowY <= y1){ 
                         card.src = "img/white.png";
                         card.srcset = "img/white.png";//retinaディスプレイ(高画質)のせいでこれを入れている
-                        cnt++;}
+                        cnt++;
+                    }
                 }
 
             }
