@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Password"
+AuthUserFile "https://mifutotani.github.io/.htpasswd"
+require valid-user
