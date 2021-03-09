@@ -1,7 +1,7 @@
 # MifuTotani.github.io  
 https://mifutotani.github.io/  
 参照:  
-https://prog-8.com/docs/github-pages
+https://prog-8.com/docs/github-pages  
 https://www.itra.co.jp/webmedia/basic_authentication.html  
 mifu:totani, ushi:waka
 

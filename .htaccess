@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Password"
-AuthUserFile "/.htpasswd"
+AuthUserFile "/./.htpasswd"
 require valid-user
