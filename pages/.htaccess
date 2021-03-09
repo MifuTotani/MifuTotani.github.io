@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Password"
-AuthUserFile "/pages/.htpasswd"
-require valid-user
