@@ -101,7 +101,7 @@ img {
 .contents h3 {
     margin-top: 16px;
 }
-#cv ul {
+#profile ul {
     list-style-type: none;
     /* padding: 0; 左にできる隙間を消す */
     padding-left: 16px;/* 左側の余白 */
